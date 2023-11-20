@@ -1,0 +1,218 @@
+/* === RULES TAGS === */
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  background-color: #fefefe;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* === //RULES TAGS// === */
+/* === RULES CLASSES === */
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+/* === //RULES CLASSES// === */
+/* === NAVIGATION === */
+.page-header {
+  width: 1280px;
+  height: 72px;
+  /* flex-shrink: 0; */
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+  background: #fefefe;
+}
+
+.page-nav-list {
+  display: flex;
+  gap: 28px;
+  /* align-items: center; */
+}
+
+.page-nav-list-item {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.btn-nav {
+  display: inline-flex;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 6px 18px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background: #bbf330;
+  color: #2c2c2c;
+}
+/* === //NAVIGATION// === */
+/* === SECTION HERO === */
+.hero-title {
+  width: 502.417px;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  width: 511px;
+  height: 69px;
+  /* flex-shrink: 0; */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.btn-hero {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 6px 18px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background: #bbf330;
+  color: #2c2c2c;
+}
+/* === //SECTION HERO// === */
+/* === SECTION 1 OFFERINGS === */
+
+.section-offerings {
+  width: 1280px;
+  /* height: 824px; */
+  /* flex-shrink: 0; */
+}
+
+.offerings-subtitle {
+  width: 526.167px;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.offerings-desc {
+  width: 500px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.offerings-list-heading {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.offerings-list-item {
+  width: 253px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn-offerings {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 6px 18px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background: #bbf330;
+  color: #2c2c2c;
+}
+/* === //SECTION 1 OFFERINGS// === */
+/* === SECTION 2 FAVORITES === */
+.favorites-subtitle {
+  width: 656px;
+  height: 49px;
+  /* flex-shrink: 0; */
+  text-align: center;
+  font-size: 42px;
+  line-height: normal;
+}
+
+.favorites-desc {
+  width: 656px;
+  height: 18px;
+  /* flex-shrink: 0; */
+  text-align: center;
+  font-size: 16px;
+  line-height: normal;
+}
+/* === //SECTION 2 FAVORITES// === */
+/* === SECTION 3 CUSTOMERS === */
+.customers-subtitle {
+  width: 501px;
+  height: 49px;
+  /* flex-shrink: 0; */
+  font-size: 42px;
+  line-height: normal;
+}
+
+.customers-desc {
+  font-size: 16px;
+  line-height: normal;
+}
+
+.customers-list-item {
+  width: 473px;
+  height: 63px;
+  /* flex-shrink: 0; */
+  font-size: 18px;
+  line-height: normal;
+}
+/* === //SECTION 3 CUSTOMERS// === */
+/* === SECTION 4 SUBSCRIBE === */
+.subscribe-subtitle {
+  width: 656px;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.subscribe-desc {
+  width: 532px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* === //SECTION 4 SUBSCRIBE// === */
+/* === FOOTER === */
+.container-holder {
+  width: 1280px;
+  height: 395px;
+  /* flex-shrink: 0; */
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  background: #fefefe;
+}
+
+/* === //FOOTER// === */
