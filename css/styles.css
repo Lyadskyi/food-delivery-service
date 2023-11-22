@@ -228,6 +228,8 @@ p {
 /* === //SECTION 1 OFFERINGS// === */
 /* === SECTION 2 FAVORITES === */
 .section-favorites {
+  width: 1280px;
+  height: 953px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
