@@ -1,18 +1,27 @@
-/* === Rules tags === */
-ul,
-ol {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+/* === Variables === */
+:root {
+	--button-green: #bbf330;
+	--dark-green: #7eb101;
+	--yellow-main: #ffe550;
+	--default: #2c2c2c;
+	--white: #fefefe;
 }
 
+/* === Rules tags === */
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5; /* 24/16 */
-	background-color: #fefefe;
-	color: #2c2c2c;
+	background-color: var(--white);
+	color: var(--default);
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -37,6 +46,10 @@ h6,
 p {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 /* === Rules classes === */
@@ -66,10 +79,8 @@ p {
 /* === Header === */
 .header {
 	padding: 10px 0;
-	height: 72px;
-	flex-shrink: 0;
 	box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
-	background: #fefefe;
+	background: var(--white);
 }
 
 .header__inner {
@@ -95,7 +106,6 @@ p {
 .menu__list-link {
 	font-weight: 400;
 	font-size: 14px;
-	transition: all 0.2s ease;
 	color: inherit;
 }
 
@@ -103,7 +113,7 @@ p {
 	font-weight: 700;
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
-	color: #bbf330;
+	color: var(--button-green);
 }
 
 .header__btn {
@@ -115,12 +125,12 @@ p {
 	padding: 6px 18px;
 	border-radius: 30px;
 	color: #2c2c2c;
-	background: #bbf330;
+	background: var(--button-green);
 }
 
 .header__btn:hover {
-	transition: all 0.2s ease-in;
-	background: #ffe450;
+	transition: all 0.2s ease-in-out;
+	background: var(--yellow-main);
 }
 
 /* === Section Hero === */
