@@ -68,6 +68,16 @@ html {
 	}
 } */
 
+.section {
+	margin: 50px 0;
+}
+
+.section-title {
+	font-size: 42px;
+	line-height: 1.1667; /* 49/42 */
+	margin-bottom: 20px;
+}
+
 @media screen and (min-width: 1440px) {
 	.container {
 		width: 1440px;
@@ -124,8 +134,8 @@ html {
 	margin-left: 30px;
 	padding: 6px 18px;
 	border-radius: 30px;
-	color: #2c2c2c;
 	background: var(--button-green);
+	color: var(--default);
 }
 
 .header__btn:hover {
@@ -133,10 +143,52 @@ html {
 	background: var(--yellow-main);
 }
 
-/* === Section Hero === */
-.section-hero {
-	/* display: flex;
-  justify-content: space-between; */
+/* === Section Hero 1408x580px === */
+.hero {
+	padding-top: 14px;
+}
+
+.hero__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero__content {
+	max-width: 511px;
+}
+
+.hero__title {
+	font-size: 48px;
+	line-height: 1.2085;
+	margin-bottom: 28px;
+}
+
+.hero__text {
+	line-height: 1.4375;
+	margin-bottom: 40px;
+}
+
+.hero__btn {
+	width: 98px;
+	height: 32px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 0;
+	padding: 6px 18px;
+	border-radius: 30px;
+	background: var(--button-green);
+	color: var(--default);
+}
+
+.hero__btn:hover {
+	transition: all 0.2s ease-in-out;
+	background: var(--yellow-main);
+}
+
+/* .section-hero {
+	display: flex;
+  justify-content: space-between;
 	padding-top: 14px;
 	padding-bottom: 14px;
 	width: 1280px;
@@ -164,14 +216,14 @@ html {
 	width: 502.417px;
 	font-size: 48px;
 	line-height: 1.2;
-	/* margin-top: 159px; */
+	margin-top: 159px;
 	margin: 0 0 28px;
 }
 
 .hero-desc {
 	width: 511px;
 	height: 69px;
-	/* flex-shrink: 0; */
+	flex-shrink: 0;
 	font-size: 16px;
 	line-height: 1.5;
 	margin: 0 0 40px;
@@ -183,7 +235,7 @@ html {
 	line-height: 1.5;
 	padding: 6px 18px;
 	margin-top: 46px;
-	/* cursor: pointer; */
+	cursor: pointer;
 	justify-content: center;
 	align-items: center;
 	border: none;
@@ -197,10 +249,80 @@ html {
 	border-radius: 30px;
 	border: 2px solid #7eb101;
 	background: #fff;
+} */
+
+/* === Section Offerings 1440x824px === */
+.offerings {
+	background-image: url(../images/offerings/offerings-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 290px 0 43px;
+	height: 980px;
 }
 
-/* === Section Offerings === */
-.section-offerings {
+.offerings__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offerings__img {
+	display: block;
+}
+
+.offerings__content {
+	max-width: 573px;
+}
+
+.offerings__subtitle {
+	max-width: 500px;
+	margin-bottom: 40px;
+}
+
+.offerings__list {
+	display: flex;
+	column-gap: 67px;
+	margin-bottom: 32px;
+}
+
+.offerings__item {
+	max-width: 253px;
+}
+
+.offerings__item-icon {
+	margin-bottom: 8px;
+}
+
+.offerings__item-title {
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 16px;
+}
+
+.offerings__item-text {
+	font-size: 14px;
+}
+
+.offerings__btn {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 0;
+	padding-block: 10px;
+	padding-inline: 20px;
+	width: 106px;
+	height: 40px;
+	border-radius: 30px;
+	border: 2px solid #7eb101;
+}
+
+.offerings__btn:hover {
+	border: none;
+	transition: all 0.2s ease-in-out;
+	background: var(--button-green);
+}
+
+/* .section-offerings {
 	width: 1280px;
 	height: 824px;
 	flex-shrink: 0;
@@ -240,7 +362,7 @@ html {
 	border-radius: 30px;
 	background: #bbf330;
 	color: #2c2c2c;
-}
+} */
 
 /* === Section Favorites === */
 .section-favorites {
