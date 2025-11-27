@@ -29,8 +29,9 @@ img {
 }
 
 button {
-	cursor: pointer;
 	border: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 a {
@@ -111,6 +112,7 @@ html {
 .menu__list {
 	display: flex;
 	gap: 28px;
+	margin-right: 30px;
 }
 
 .menu__list-link {
@@ -120,7 +122,7 @@ html {
 }
 
 .menu__list-link:hover {
-	font-weight: 700;
+	/* font-weight: 700; */
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
 	color: var(--button-green);
@@ -131,7 +133,6 @@ html {
 	height: 32px;
 	font-weight: 500;
 	font-size: 13px;
-	margin-left: 30px;
 	padding: 6px 18px;
 	border-radius: 30px;
 	background: var(--button-green);
@@ -253,12 +254,11 @@ html {
 
 /* === Section Offerings 1440x824px === */
 .offerings {
-	background-image: url(../images/offerings/offerings-bg.png);
+	background-image: url(../images/offerings/offerings-1440-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 290px 0 43px;
-	height: 980px;
 }
 
 .offerings__inner {
@@ -290,13 +290,20 @@ html {
 	max-width: 253px;
 }
 
-.offerings__item-icon {
+.offerings__icon-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 8px;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: var(--white);
 }
 
 .offerings__item-title {
 	font-size: 18px;
-	line-height: 1.4;
+	line-height: 1.3889;
 	margin-bottom: 16px;
 }
 
