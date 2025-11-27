@@ -87,7 +87,7 @@ html {
 	}
 }
 
-/* === Header === */
+/* === Header 1440X72px === */
 .header {
 	padding: 10px 0;
 	box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
@@ -122,9 +122,10 @@ html {
 }
 
 .menu__list-link:hover {
-	/* font-weight: 700; */
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
+	transition: all 0.1s linear;
+
 	color: var(--button-green);
 }
 
@@ -189,10 +190,11 @@ html {
 
 /* === Section Offerings 1440x824px === */
 .offerings {
-	background-image: url(../images/offerings/offerings-1440-bg.png);
+	background-image: url(../images/offerings/offerings-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	margin-bottom: 50px;
 	padding: 290px 0 43px;
 }
 
@@ -267,6 +269,7 @@ html {
 /* === Section Favorites 1440x953px === */
 .favorites {
 	height: 953px;
+	padding-bottom: 0;
 }
 
 .favorites__title {
@@ -299,24 +302,24 @@ html {
 	padding: 24px;
 }
 
-/* === Section Customers-say === */
-.customers-subtitle {
-	width: 501px;
-	height: 49px;
-	/* flex-shrink: 0; */
-	font-size: 42px;
-	line-height: normal;
+/* === Section Customers 1440X647px === */
+.customers {
+	background-image: url(../images/customers/customers-bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 707px;
+	margin-bottom: 50px;
+	padding: 100px 0 200px;
 }
 
-.customers-desc {
-	font-size: 16px;
-	line-height: normal;
+.customers__text {
+	margin-bottom: 32px;
 }
 
 .customers-list-item {
 	width: 473px;
 	height: 63px;
-	/* flex-shrink: 0; */
 	font-size: 18px;
 	line-height: normal;
 }
