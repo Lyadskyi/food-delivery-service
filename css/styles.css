@@ -187,71 +187,6 @@ html {
 	background: var(--yellow-main);
 }
 
-/* .section-hero {
-	display: flex;
-  justify-content: space-between;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	width: 1280px;
-	height: 608px;
-	flex-shrink: 0;
-}
-
-.hero-container {
-	display: flex;
-}
-
-.section-hero__content-wrapper {
-	display: flex;
-	max-width: 50%;
-}
-
-.section-hero__content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 85%;
-}
-
-.hero-title {
-	width: 502.417px;
-	font-size: 48px;
-	line-height: 1.2;
-	margin-top: 159px;
-	margin: 0 0 28px;
-}
-
-.hero-desc {
-	width: 511px;
-	height: 69px;
-	flex-shrink: 0;
-	font-size: 16px;
-	line-height: 1.5;
-	margin: 0 0 40px;
-}
-
-.btn-hero {
-	font-weight: 500;
-	font-size: 13px;
-	line-height: 1.5;
-	padding: 6px 18px;
-	margin-top: 46px;
-	cursor: pointer;
-	justify-content: center;
-	align-items: center;
-	border: none;
-	border-radius: 30px;
-	background: #bbf330;
-	color: #2c2c2c;
-}
-
-.btn-hero:hover,
-.btn-hero:focus {
-	border-radius: 30px;
-	border: 2px solid #7eb101;
-	background: #fff;
-} */
-
 /* === Section Offerings 1440x824px === */
 .offerings {
 	background-image: url(../images/offerings/offerings-1440-bg.png);
@@ -329,92 +264,39 @@ html {
 	background: var(--button-green);
 }
 
-/* .section-offerings {
-	width: 1280px;
-	height: 824px;
-	flex-shrink: 0;
-}
-
-.offerings-subtitle {
-	width: 526.167px;
-	font-size: 42px;
-	line-height: 1.2;
-}
-
-.offerings-desc {
-	width: 500px;
-	font-size: 16px;
-	line-height: 1.5;
-}
-
-.offerings-list-heading {
-	font-size: 18px;
-	line-height: 1.4;
-}
-
-.offerings-list-item {
-	width: 253px;
-	font-size: 14px;
-	line-height: 1.5;
-}
-
-.btn-offerings {
-	font-weight: 500;
-	font-size: 13px;
-	line-height: 1.5;
-	padding: 6px 18px;
-	justify-content: center;
-	align-items: center;
-	border: none;
-	border-radius: 30px;
-	background: #bbf330;
-	color: #2c2c2c;
-} */
-
-/* === Section Favorites === */
-.section-favorites {
-	width: 1280px;
+/* === Section Favorites 1440x953px === */
+.favorites {
 	height: 953px;
-	padding-top: 100px;
-	padding-bottom: 100px;
 }
 
-.favorites-subtitle {
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
+.favorites__title {
 	text-align: center;
-	font-size: 42px;
-	line-height: normal;
 }
-
-.favorites-desc {
-	/* width: 656px;
-  height: 18px; */
+.favorites__text {
+	text-align: center;
+	line-height: 1.125;
 	margin-bottom: 40px;
-	text-align: center;
-	font-size: 16px;
-	line-height: normal;
 }
 
-.favorites-list {
+.favorites__list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 32px;
 }
 
-.favorites-list-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 24px;
+.favorites__list-item {
+	/* width: calc((100% - 64px) / 3); */
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 16px solid var(--yellow-main);
+	background: var(--white);
 }
 
-.favorites-list-item {
-	width: calc((100% - 64px) / 3);
-	border-radius: 197.5px;
-	border: 16px solid #ffe550;
-	background: #fefefe;
+.favorites__list-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
 }
 
 /* === Section Customers-say === */
@@ -465,3 +347,68 @@ html {
 	display: flex;
 	gap: 28px;
 }
+
+/* .section-hero {
+	display: flex;
+  justify-content: space-between;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	width: 1280px;
+	height: 608px;
+	flex-shrink: 0;
+}
+
+.hero-container {
+	display: flex;
+}
+
+.section-hero__content-wrapper {
+	display: flex;
+	max-width: 50%;
+}
+
+.section-hero__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 85%;
+}
+
+.hero-title {
+	width: 502.417px;
+	font-size: 48px;
+	line-height: 1.2;
+	margin-top: 159px;
+	margin: 0 0 28px;
+}
+
+.hero-desc {
+	width: 511px;
+	height: 69px;
+	flex-shrink: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 0 40px;
+}
+
+.btn-hero {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 6px 18px;
+	margin-top: 46px;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 30px;
+	background: #bbf330;
+	color: #2c2c2c;
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+	border-radius: 30px;
+	border: 2px solid #7eb101;
+	background: #fff;
+} */
