@@ -322,6 +322,7 @@ html {
 	height: 227px;
 	gap: 139px;
 }
+
 .customers__options,
 .customers__experience {
 	max-width: 501px;
@@ -336,12 +337,14 @@ html {
 	display: block;
 	margin-bottom: 28px;
 }
+
 .customers__subtitle {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.1667; /* 21/18 */
 	margin-bottom: 40px;
 }
+
 .customers__author {
 	display: flex;
 }
@@ -349,17 +352,29 @@ html {
 .customers__author-img {
 	margin-right: 16px;
 }
+
 .customers__inner {
-	padding-right: 16px;
-	border-radius: 1px;
-	border-right: 1px solid #7eb101;
+	position: relative;
 }
+
+.customers__inner::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 93px;
+	width: 1px;
+	height: 52px;
+	border-radius: 1px;
+	background-color: var(--dark-green);
+}
+
 .customers__inner-title {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.5;
 	margin-bottom: 2px;
 }
+
 .customers__inner-subtitle {
 	font-size: 14px;
 }
