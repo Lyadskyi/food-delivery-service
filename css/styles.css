@@ -302,14 +302,13 @@ html {
 	padding: 24px;
 }
 
-/* === Section Customers 1440X647px === */
+/* === Section Customers 1440X707px === */
 .customers {
 	background-image: url(../images/customers/customers-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 707px;
-	margin-bottom: 50px;
 	padding: 100px 0 200px;
 }
 
@@ -379,7 +378,21 @@ html {
 	font-size: 14px;
 }
 
-/* === Section Subscribe === */
+/* === Section Subscribe 1440X266 === */
+.subscribe {
+}
+
+.subscribe__container {
+	display: flex;
+	justify-content: space-between;
+}
+.subscribe__content {
+}
+.subscribe__title {
+}
+.subscribe__text {
+}
+
 .subscribe-subtitle {
 	width: 656px;
 	font-size: 42px;
