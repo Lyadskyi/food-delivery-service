@@ -2,8 +2,9 @@
 :root {
 	--button-green: #bbf330;
 	--dark-green: #7eb101;
-	--yellow-main: #ffe550;
 	--default: #2c2c2c;
+	--yellow-main: #ffe550;
+	--placeholder: #505050;
 	--white: #fefefe;
 }
 
@@ -378,8 +379,9 @@ html {
 	font-size: 14px;
 }
 
-/* === Section Subscribe 1440X266 === */
+/* === Section Subscribe 1440X266px === */
 .subscribe {
+	padding-bottom: 64px;
 }
 
 .subscribe__container {
@@ -391,19 +393,70 @@ html {
 .subscribe__title {
 }
 .subscribe__text {
+	margin-bottom: 24px;
 }
 
-.subscribe-subtitle {
-	width: 656px;
-	font-size: 42px;
-	line-height: 1.2;
+.subscribe__form {
+	display: flex;
 }
 
-.subscribe-desc {
-	width: 532px;
-	font-size: 16px;
-	line-height: 1.5;
+.subscribe__form-input {
+	width: 394px;
+	height: 42px;
+	font-size: 12px;
+	margin-right: 32px;
+	padding: 12px 57px 12px 11px;
+	border: 0.85px solid var(--yellow-main);
+	border-radius: 30px;
+	color: var(--placeholder);
+	background: var(--white);
 }
+
+.subscribe__form-btn {
+	width: 103px;
+	height: 42px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 0;
+	padding: 11px 22px;
+	border-radius: 30px;
+	background: var(--button-green);
+	color: var(--default);
+}
+
+.subscribe__form-btn:hover {
+	transition: all 0.2s ease-in-out;
+	background: var(--yellow-main);
+}
+
+/* &__form-input {
+		padding: 6px 10px 6px 18px;
+		width: 100%;
+		height: 40px;
+		border-radius: 21px;
+		border: 1px solid rgba($title, 0.7);
+		background-color: transparent;
+		&::placeholder {
+			font-family: 'Open Sans', sans-serif;
+			line-height: 1.75;
+			font-size: 16px;
+			font-weight: 400;
+			color: $placeholder;
+		}
+	}
+	&__form-button {
+		margin-left: 9px;
+		padding: 6px 12px;
+		width: 160px;
+		height: 40px;
+		font-weight: 600;
+		line-height: 1.75;
+		text-align: center;
+		border-radius: 21px;
+		border: none;
+		background-color: $title;
+		color: #fffff0;
+	} */
 
 /* === Footer === */
 .container-holder {
