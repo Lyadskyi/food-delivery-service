@@ -69,7 +69,7 @@
 		<!-- Main -->
 		<main>
 			<!-- === Section Hero === -->
-			<!-- <section class="hero">
+			<section class="hero">
 				<div class="container">
 					<div class="hero__inner">
 						<div class="hero__content">
@@ -86,7 +86,7 @@
 						</div>
 						<div class="hero__wrapper-img">
 							<a class="hero__wrapper-link" href="#">
-								<img
+								<!-- <img
 									class="hero__img"
 									src="images/hero/meatballs-desktop.png"
 									alt="meatballs"
@@ -94,12 +94,25 @@
 									height="528"
 									decoding="async"
 									fetchpriority="high"
+								/> -->
+								<img
+									class="hero__img"
+									srcset="
+										./images/tablet/hero/meatballs-tablet.png 292w,
+										./images/hero/meatballs-desktop.png       528w
+									"
+									sizes="(min-width: 1440px) 528px,
+									(min-width: 768px) 292px"
+									src="images/hero/meatballs-desktop.png"
+									alt="meatballs"
+									decoding="async"
+									fetchpriority="high"
 								/>
 							</a>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- === Section Offerings === -->
 			<!-- <section id="about" class="offerings">
