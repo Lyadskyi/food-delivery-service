@@ -62,13 +62,15 @@ html {
 	padding-right: 20px;
 } */
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.container {
-		width: 768px;
+		width: 100%;
 		padding-left: 32px;
 		padding-right: 32px;
 	}
-} */
+
+	/* === Header 768X72px === */
+}
 
 .section {
 	margin: 50px 0;
@@ -189,6 +191,12 @@ html {
 	background: var(--yellow-main);
 }
 
+.hero__wrapper-img {
+	border-radius: 50%;
+	border: 26px solid var(--yellow-main);
+	background: var(--white);
+}
+
 /* === Section Offerings 1440x824px === */
 .offerings {
 	background-image: url(../images/offerings/offerings-bg.png);
@@ -196,7 +204,7 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 50px;
-	padding: 290px 0 43px;
+	padding: 220px 0 43px;
 }
 
 .offerings__inner {
@@ -269,8 +277,8 @@ html {
 
 /* === Section Favorites 1440x953px === */
 .favorites {
-	height: 953px;
-	padding-bottom: 0;
+	/* height: 953px; */
+	padding: 50px 0;
 }
 
 .favorites__title {
@@ -305,7 +313,7 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 24px;
+	padding: 25px 24px;
 }
 
 /* === Section Customers 1440X707px === */
