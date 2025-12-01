@@ -542,4 +542,29 @@ html {
 		border: 14px solid var(--yellow-main);
 		background: #ffffff;
 	}
+
+/* === Section Offerings 768x1140px === */
+.offerings {
+	background-image: url(../images/tablet/offerings/offerings-bg-tablet.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 50px;
+	padding: 150px 0 88px;
+}
+
+.offerings__inner {
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offerings__image-wrapper{
+	margin-bottom: 60px;
+}
+
+
+
+
+
 }

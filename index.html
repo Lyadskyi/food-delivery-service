@@ -115,16 +115,28 @@
 			</section>
 
 			<!-- === Section Offerings === -->
-			<!-- <section id="about" class="offerings">
+			<section id="about" class="offerings">
 				<div class="container">
 					<div class="offerings__inner">
 						<div class="offerings__image-wrapper">
-							<img
+							<!-- <img
 								class="offerings__img"
 								src="./images/offerings/apple.png"
 								alt="apple"
 								width="550"
 								height="604"
+								decoding="async"
+							/> -->
+							<img
+								class="offerings__img"
+								srcset="
+									./images/tablet/offerings/apples-tablet.png 704w,
+									./images/offerings/apple.png                550w
+								"
+								sizes="(min-width: 1440px) 550px,
+									(min-width: 768px) 704px"
+								src="./images/offerings/apple.png"
+								alt="apple"
 								decoding="async"
 							/>
 						</div>
@@ -177,7 +189,7 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- === Section Favorites === -->
 			<!-- <section id="menu" class="favorites section">
