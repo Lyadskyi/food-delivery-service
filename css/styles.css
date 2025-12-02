@@ -265,6 +265,10 @@ html {
 	background: var(--button-green);
 }
 
+.read-more {
+	display: none;
+}
+
 /* === Section Favorites 1440x953px === */
 .favorites {
 	/* height: 953px; */
@@ -517,7 +521,7 @@ html {
 	font-size: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 	.container {
 		width: 100%;
 		padding-left: 32px;
@@ -543,28 +547,66 @@ html {
 		background: #ffffff;
 	}
 
-/* === Section Offerings 768x1140px === */
-.offerings {
-	background-image: url(../images/tablet/offerings/offerings-bg-tablet.png);
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 50px;
-	padding: 150px 0 88px;
-}
+	/* === Section Offerings 768x1140px === */
+	.offerings {
+		background-image: url(../images/tablet/offerings/offerings-bg-tablet.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 50px;
+		padding: 150px 0 88px;
+	}
 
-.offerings__inner {
-	display: inline;
-	justify-content: space-between;
-	align-items: center;
-}
+	.offerings__inner {
+		display: inline;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-.offerings__image-wrapper{
-	margin-bottom: 60px;
-}
+	.offerings__image-wrapper {
+		margin-bottom: 60px;
+	}
 
+	.offerings__content {
+		max-width: 620px;
+	}
 
+	.offerings__subtitle {
+		margin-bottom: 25px;
+	}
 
+	.offerings__list {
+		margin-bottom: 20px;
+	}
 
+	.offerings__item {
+		max-width: 288px;
+	}
 
+	.offerings__item-title {
+		line-height: 1.1667; /* 21/18 */
+	}
+
+	.offerings__item-text {
+		width: 288px;
+	}
+
+	.offerings__btn {
+		margin-right: 24px;
+	}
+
+	.text-order {
+		width: 252px;
+		line-height: 1.4286; /* 20/14 */
+	}
+
+	.read-more {
+		display: inline-block;
+		font-size: 13px;
+		color: #000000;
+	}
+
+	.read-more__icon {
+		margin-left: 3.5px;
+	}
 }
