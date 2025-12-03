@@ -147,6 +147,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 340px;
 }
 
 .hero__content {
@@ -182,6 +183,62 @@ html {
 }
 
 .hero__wrapper-img {
+	border-radius: 50%;
+	border: 26px solid var(--yellow-main);
+	background: var(--white);
+}
+
+.carousel {
+	display: grid;
+	grid-auto-flow: column;
+	overflow-x: hidden;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	anchor-name: --carousel;
+
+	&::scroll-button(*) {
+		position: fixed;
+		right: -37px;
+		left: -37px;
+		position-anchor: --carousel;
+	}
+
+	&::scroll-button(right) {
+		position-area: inline-end center;
+		content: '';
+		background-image: url(/images/hero/arrow-right.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 17px 29px;
+		width: 48px;
+		height: 40px;
+		border-radius: 8px;
+		border: none;
+		background-color: var(--white);
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+	}
+
+	&::scroll-button(left) {
+		position-area: inline-start center;
+		content: '';
+		background-image: url(/images/hero/arrow-left.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 17px 29px;
+		width: 48px;
+		height: 40px;
+		border-radius: 8px;
+		border: none;
+		background-color: var(--white);
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+	}
+}
+
+.carousel__img {
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: center;
 	border-radius: 50%;
 	border: 26px solid var(--yellow-main);
 	background: var(--white);
