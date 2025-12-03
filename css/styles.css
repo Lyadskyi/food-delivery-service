@@ -521,7 +521,7 @@ html {
 	font-size: 12px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
 	.container {
 		width: 100%;
 		padding-left: 32px;
@@ -591,13 +591,13 @@ html {
 		width: 288px;
 	}
 
-	.offerings__btn {
-		margin-right: 24px;
-	}
-
 	.text-order {
 		width: 252px;
 		line-height: 1.4286; /* 20/14 */
+	}
+
+	.offerings__btn {
+		margin-right: 24px;
 	}
 
 	.read-more {
