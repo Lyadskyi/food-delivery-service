@@ -72,7 +72,7 @@ html {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
 	.container {
 		width: 1440px;
 		margin: 0 auto;
@@ -578,7 +578,7 @@ html {
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1520px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 	.container {
 		width: 100%;
 		padding-left: 32px;
