@@ -245,7 +245,7 @@ html {
 
 	/* === Section Offerings 1440x824px === */
 	.offerings {
-		background-image: url(../images/offerings/offerings-bg.png);
+		background-image: url(../images/offerings/offerings-bg-desktop.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -368,7 +368,7 @@ html {
 
 	/* === Section Customers 1440X707px === */
 	.customers {
-		background-image: url(../images/customers/customers-bg.png);
+		background-image: url(../images/customers/customers-bg-desktop.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -383,7 +383,7 @@ html {
 	.customers__content {
 		display: flex;
 		height: 227px;
-		gap: 139px;
+		gap: 239px;
 	}
 
 	.customers__options,
@@ -492,7 +492,7 @@ html {
 
 	/* === Footer 1280X395px === */
 	.footer {
-		background-image: url(../images/footer/footer-bg.png);
+		background-image: url(../images/footer/footer-bg-desktop.png);
 		background-position: top center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -606,7 +606,7 @@ html {
 
 	/* === Section Offerings 768x1140px === */
 	.offerings {
-		background-image: url(../images/tablet/offerings/offerings-bg-tablet.png);
+		background-image: url(../images/offerings/offerings-bg-tablet.png);
 		background-position: top center;
 		background-repeat: no-repeat;
 		background-size: cover;
