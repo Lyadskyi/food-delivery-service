@@ -136,27 +136,25 @@
 				<div class="container">
 					<div class="offerings__inner">
 						<div class="offerings__image-wrapper">
-							<img
-								class="offerings__img"
-								src="./images/offerings/apple-desktop.png"
-								alt="apple"
-								width="550"
-								height="604"
-								decoding="async"
-							/>
-							<!-- <img
-								class="offerings__img"
-								srcset="
-									./images/tablet/offerings/apples-tablet.png 704w,
-									./images/offerings/apple.png                550w
-								"
-								sizes="(min-width: 1280px) 550px,
-										(min-width: 768px) 704px,
-										100vw"
-								src="./images/offerings/apple.png"
-								alt="apple"
-								decoding="async"
-							/> -->
+							<picture>
+								<source
+									media="(min-width: 1280px)"
+									srcset="./images/offerings/apple-desktop.png"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/offerings/apples-tablet.png"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/offerings/apple-mobile.png"
+								/>
+								<img
+									src="./images/offerings/apple-mobile.png"
+									alt="apple"
+									loading="lazy"
+								/>
+							</picture>
 						</div>
 						<div class="offerings__content">
 							<h2 class="offerings__title section-title">
