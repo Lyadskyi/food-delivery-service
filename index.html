@@ -376,13 +376,25 @@
 							<button class="subscribe__form-btn" type="submit">Send</button>
 						</form>
 					</div>
-					<img
-						class="subscribe__img"
-						src="images/subscribe/banana-desktop.png"
-						alt="banana"
-						width="546"
-						height="266"
-					/>
+					<picture>
+						<source
+							media="(min-width: 1280px)"
+							srcset="./images/subscribe/banana-desktop.png"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcset="./images/subscribe/banana-tablet.png"
+						/>
+						<source
+							media="(max-width: 767px)"
+							srcset="./images/subscribe/banana-mobile.png"
+						/>
+						<img
+							src="./images/subscribe/banana-mobile.png"
+							alt="banana"
+							loading="lazy"
+						/>
+					</picture>
 				</div>
 			</section>
 		</main>

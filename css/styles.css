@@ -76,7 +76,7 @@ html {
 	.container {
 		width: 1440px;
 		margin: 0 auto;
-		padding: 0 16px;
+		padding-inline: 16px; /* Замінює padding-left та padding-right */
 	}
 
 	/* === Header 1440X72px === */
@@ -581,9 +581,10 @@ html {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 	.container {
 		width: 100%;
-		padding-left: 32px;
-		padding-right: 32px;
+		padding-inline: 32px;
 	}
+
+	/* === Header 768X72px === */
 
 	/* === Section Hero 704x409px === */
 	.hero {
@@ -665,5 +666,65 @@ html {
 
 	.read-more__icon {
 		margin-left: 3.5px;
+	}
+
+	/* === Section Favorites 704x1225px === */
+
+	/* === Section Customers 768X544px === */
+
+	/* === Section Subscribe 704X340px === */
+
+	/* === Footer 768X506px === */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.container {
+		padding-inline: 20px;
+	}
+
+	/* === Header 320X72px === */
+	.header {
+		padding-block: 10px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.header__btn {
+		display: none;
+	}
+
+	/* === Section Hero 280x259px === */
+	.carousel {
+		display: none;
+	}
+
+	/* === Section Offerings 320x1122px === */
+	.offerings {
+		background-image: url(../images/offerings/offerings-bg-mobile.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 50px;
+		padding: 150px 0 88px;
+	}
+
+	/* === Section Favorites 280x1064px === */
+
+	/* === Section Customers 320X769px === */
+
+	/* === Section Subscribe 280X375px === */
+
+	/* === Footer 320X619px === */
+	.footer {
+		background-image: url(../images/footer/footer-bg-mobile.png);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 619px;
+		padding-block: 60px;
+		box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
 	}
 }
