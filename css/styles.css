@@ -68,7 +68,7 @@ html {
 .container {
 	/* width: 320px; */
 	margin-inline: auto;
-	padding-inline: 20px;
+	padding-inline: 20px; /* Замінює padding-left та padding-right */
 }
 
 /* === Header 320X72px === */
@@ -203,17 +203,32 @@ html {
 	}
 
 	.hero__title {
+		max-width: 537px;
 		font-size: 42px;
+		line-height: 1.1905;
 		margin-bottom: 44px;
 	}
 
 	.hero__text {
 		width: 336px;
+		margin-bottom: 40px;
 	}
 
-	.hero__wrapper-img {
-		border: 14px solid var(--yellow-main);
-		background: #ffffff;
+	.hero__btn {
+		width: 98px;
+		height: 32px;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 0;
+		padding: 6px 18px;
+		border-radius: 30px;
+		background: var(--button-green);
+		color: var(--default);
+	}
+
+	.hero__btn:hover {
+		transition: all 0.2s ease-in-out;
+		background: var(--yellow-main);
 	}
 
 	/* === Section Offerings 768x1140px === */
@@ -291,7 +306,7 @@ html {
 @media screen and (min-width: 1440px) {
 	.container {
 		width: 1440px;
-		padding-inline: 16px; /* Замінює padding-left та padding-right */
+		padding-inline: 16px;
 	}
 
 	/* === Section Hero 1408x580px === */
@@ -301,9 +316,8 @@ html {
 
 	.hero__inner {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		gap: 340px;
+		gap: 317px;
 	}
 
 	.hero__content {
@@ -317,25 +331,8 @@ html {
 	}
 
 	.hero__text {
+		width: 511px;
 		line-height: 1.4375;
-		margin-bottom: 40px;
-	}
-
-	.hero__btn {
-		width: 98px;
-		height: 32px;
-		font-weight: 500;
-		font-size: 13px;
-		line-height: 0;
-		padding: 6px 18px;
-		border-radius: 30px;
-		background: var(--button-green);
-		color: var(--default);
-	}
-
-	.hero__btn:hover {
-		transition: all 0.2s ease-in-out;
-		background: var(--yellow-main);
 	}
 
 	.hero__wrapper-img {

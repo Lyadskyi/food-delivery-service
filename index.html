@@ -9,7 +9,6 @@
 			type="image/png"
 			sizes="32x32"
 			href="images/star-logo.png"
-			<link
 			rel="stylesheet"
 			href=""
 		/>
@@ -78,7 +77,7 @@
 		<!-- Main -->
 		<main>
 			<!-- === Section Hero === -->
-			<!-- <section class="hero">
+			<section class="hero">
 				<div class="container">
 					<div class="hero__inner">
 						<div class="hero__content">
@@ -92,53 +91,66 @@
 								comfort of your own home.
 							</p>
 							<button class="hero__btn">Order Now</button>
-						</div> -->
-			<!-- <div class="hero__wrapper-img">
-							<a class="hero__wrapper-link" href="#">
-								<img
-									class="hero__img"
-									src="images/hero/meatballs-desktop.png"
-									alt="meatballs"
-									width="528"
-									height="528"
-									decoding="async"
-									fetchpriority="high"
-								/>
-								<img
-									class="hero__img"
-									srcset="
-										./images/tablet/hero/meatballs-tablet.png 292w,
-										./images/hero/meatballs-desktop.png       528w
-									"
-									sizes="(min-width: 1440px) 528px,
-									(min-width: 768px) 292px"
-									src="images/hero/meatballs-desktop.png"
-									alt="meatballs"
-									decoding="async"
-									fetchpriority="high"
-								/>
-							</a>
-						</div> -->
-			<!-- <div class="carousel">
+						</div>
+						<div class="carousel">
 							<div class="carousel__img">
-								<img
-									src="./images/hero/meatballs-desktop.png"
-									alt="meatballs"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/hero/meatballs-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/hero/meatballs-tablet.png"
+									/>
+									<img
+										class="hero__image"
+										src="./images/hero/meatballs-tablet.png"
+										alt="meatballs"
+										loading="lazy"
+									/>
+								</picture>
 							</div>
 							<div class="carousel__img">
-								<img src="./images/hero/salad-slises-desktop.png" alt="salad" />
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/hero/salad-slises-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/hero/salad-slises-tablet.png"
+									/>
+									<img
+										class="hero__image"
+										src="./images/hero/salad-slises-tablet.png"
+										alt="salad slises"
+										loading="lazy"
+									/>
+								</picture>
 							</div>
 							<div class="carousel__img">
-								<img
-									src="./images/hero/plate-avocado-desktop.png"
-									alt="avocado"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/hero/plate-avocado-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/hero/plate-avocado-tablet.png"
+									/>
+									<img
+										class="hero__image"
+										src="./images/hero/plate-avocado-tablet.png"
+										alt="plate avocado"
+										loading="lazy"
+									/>
+								</picture>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- === Section Offerings === -->
 			<!-- <section id="about" class="offerings">
