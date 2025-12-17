@@ -55,13 +55,6 @@ html {
 }
 
 /* === Rules classes === */
-/* .container {
-	width: 320px;
-	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
-} */
-
 .section {
 	margin: 50px 0;
 }
@@ -72,22 +65,58 @@ html {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 120px) and (max-width: 767px) {
-	.container {
-		padding-inline: 20px;
-	}
+.container {
+	/* width: 320px; */
+	margin-inline: auto;
+	padding-inline: 20px;
+}
 
-	/* === Header 320X72px === */
-	.header {
-		padding-block: 10px;
-	}
+/* === Header 320X72px === */
+.header {
+	padding-block: 10px;
+}
 
-	.header__inner {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
+.burger__btn {
+	background-color: transparent;
+}
+
+/* === Section Hero 280x259px === */
+
+/* === Section Offerings 320x1122px === */
+.offerings {
+	background-image: url(../images/offerings/offerings-bg-mobile.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 50px;
+	padding: 150px 0 88px;
+}
+
+/* === Section Favorites 280x1064px === */
+
+/* === Section Customers 320X769px === */
+
+/* === Section Subscribe 280X375px === */
+
+/* === Footer 320X619px === */
+.footer {
+	background-image: url(../images/footer/footer-bg-mobile.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 619px;
+	padding-block: 60px;
+	box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
+@media screen and (max-width: 767.9px) {
 	.menu {
 		display: none;
 	}
@@ -96,45 +125,12 @@ html {
 		display: none;
 	}
 
-	.burger__btn {
-		background-color: transparent;
-	}
-
-	/* === Section Hero 280x259px === */
 	.carousel {
 		display: none;
 	}
-
-	/* === Section Offerings 320x1122px === */
-	.offerings {
-		background-image: url(../images/offerings/offerings-bg-mobile.png);
-		background-position: top center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin-bottom: 50px;
-		padding: 150px 0 88px;
-	}
-
-	/* === Section Favorites 280x1064px === */
-
-	/* === Section Customers 320X769px === */
-
-	/* === Section Subscribe 280X375px === */
-
-	/* === Footer 320X619px === */
-	.footer {
-		background-image: url(../images/footer/footer-bg-mobile.png);
-		background-position: top center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-		height: 619px;
-		padding-block: 60px;
-		box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
-	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
 	.container {
 		width: 100%;
 		padding-inline: 32px;
@@ -295,65 +291,7 @@ html {
 @media screen and (min-width: 1440px) {
 	.container {
 		width: 1440px;
-		margin-inline: auto;
 		padding-inline: 16px; /* Замінює padding-left та padding-right */
-	}
-
-	/* === Header 1440X72px === */
-	.header {
-		padding: 10px 0;
-		box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
-		background: var(--white);
-	}
-
-	.header__inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.logo {
-		display: inline-block;
-		line-height: 0;
-	}
-
-	.menu {
-		margin-left: auto;
-	}
-
-	.menu__list {
-		display: flex;
-		gap: 28px;
-		margin-right: 30px;
-	}
-
-	.menu__list-link {
-		font-weight: 400;
-		font-size: 14px;
-		color: inherit;
-	}
-
-	.menu__list-link:hover {
-		text-decoration: underline;
-		text-decoration-skip-ink: none;
-		transition: all 0.1s linear;
-		color: var(--button-green);
-	}
-
-	.header__btn {
-		width: 98px;
-		height: 32px;
-		font-weight: 500;
-		font-size: 13px;
-		padding: 6px 18px;
-		border-radius: 30px;
-		background: var(--button-green);
-		color: var(--default);
-	}
-
-	.header__btn:hover {
-		transition: all 0.2s ease-in-out;
-		background: var(--yellow-main);
 	}
 
 	/* === Section Hero 1408x580px === */
