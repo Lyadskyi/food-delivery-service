@@ -88,6 +88,11 @@ html {
 	background-color: transparent;
 }
 
+/* .burger__btn:hover,
+.burger__btn:focus {
+	fill: var(--yellow-main);
+} */
+
 /* === Section Hero 280x259px === */
 
 /* === Section Offerings 320x1122px === */
@@ -746,6 +751,17 @@ html {
 		height: 100%;
 		z-index: 999;
 		background-color: rgba(94, 99, 99, 0.7);
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 250ms linear, visibility 250ms linear;
+	}
+
+	.backdrop.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
 	}
 
 	.modal {
