@@ -62,14 +62,15 @@
 						</ul>
 					</nav>
 					<a class="header__btn" href="#">Order Now</a>
-					<button type="button" class="burger__btn">
-						<img
-							src="./images/header/burger-btn.svg"
-							alt="button close"
-							class="icon-img-svg"
-							width="45"
-							height="32"
-						/>
+					<button class="burger__btn" type="button">
+						<svg
+							class="burger__btn-icon"
+							width="24"
+							height="17"
+							aria-label="open menu window"
+						>
+							<use href="./images/sprite.svg#icon-burger-button"></use>
+						</svg>
 					</button>
 				</div>
 			</div>
@@ -493,6 +494,16 @@
 		<!-- Modal window -->
 		<div class="backdrop">
 			<div class="modal">
+				<button class="modal__close-btn" type="button">
+					<svg
+						class="modal__close-icon"
+						width="11"
+						height="11"
+						aria-label="close modal button"
+					>
+						<use href="./images/sprite.svg#icon-close-button"></use>
+					</svg>
+				</button>
 			</div>
 		</div>
 	</body>
