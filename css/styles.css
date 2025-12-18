@@ -771,6 +771,7 @@ html {
 		transform: translate(-50%, -50%);
 		width: 458px;
 		height: 449px;
+		padding: 32px;
 		border-radius: 30px;
 		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
 		background: #ffe550;
@@ -785,5 +786,25 @@ html {
 		border-radius: 100%;
 		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
 		background-color: #ffffff;
+	}
+
+	.modal__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.2085;
+		text-align: center;
+	}
+
+	.review__form-btn {
+		display: block;
+		width: 106px;
+		height: 40px;
+		margin-top: 32px;
+		margin-inline: auto;
+		padding-block: 10px;
+		padding-inline: 20px;
+		border-radius: 30px;
+		border: 2px solid #7eb101;
+		background: #fff;
 	}
 }
