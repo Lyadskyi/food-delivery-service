@@ -6,6 +6,7 @@
 	--yellow-main: #ffe550;
 	--placeholder: #505050;
 	--white: #fefefe;
+	--error-red: #ff705d;
 }
 
 /* === Rules tags === */
@@ -821,6 +822,32 @@ html {
 		background: #ffffff;
 	}
 
+	/* Приховую повідомлення за замовчуванням */
+	.error-message {
+		display: none;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 1.385;
+		margin-top: 1px;
+		margin-left: 12px;
+		color: var(--error-red);
+	}
+
+	/* Якщо поле невалідне і в ньому щось написано — показую текст помилки */
+	.review__form-field:not(:placeholder-shown):invalid + .error-message {
+		display: block;
+	}
+
+	/* Рамка інпута при помилці */
+	.review__form-field:not(:placeholder-shown):invalid {
+		border: 1px solid var(--error-red);
+	}
+
+	/* Рамка інпута, коли все правильно */
+	.review__form-field:not(:placeholder-shown):valid {
+		border: 1px solid var(--dark-green);
+	}
+
 	.review__form-btn {
 		display: block;
 		width: 106px;
@@ -834,7 +861,7 @@ html {
 	}
 
 	.review__form-btn:hover {
-		border: none;
+		border: 2px solid var(--dark-green);
 		transition: all 0.2s ease-in-out;
 		background: var(--button-green);
 	}

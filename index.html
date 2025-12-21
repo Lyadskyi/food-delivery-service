@@ -505,50 +505,75 @@
 					</svg>
 				</button>
 				<h2 class="modal__title">Order Form</h2>
-				<form class="review__form">
+				<form class="review__form" novalidate>
 					<div class="review__form-field-wrapper">
 						<label class="review__form-field-label" for="user-name">
 							Name
 						</label>
-						<input
-							class="review__form-field"
-							type="text"
-							name="user-name"
-							id="user-name"
-							placeholder="Your name"
-							required
-							pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙ']+"
-							title="Jenny Wilson"
-						/>
+						<div class="input__container">
+							<input
+								class="review__form-field"
+								type="text"
+								name="user-name"
+								id="user-name"
+								placeholder="Your name"
+								required
+								pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙ']+"
+								title="The name must be between 3 and 25 characters"
+							/>
+							<span class="error-message">
+								<svg width="12" height="12" aria-label="attention">
+									<use href="./images/sprite.svg#icon-attention"></use>
+								</svg>
+								The name must be between 3 and 25 characters
+							</span>
+						</div>
 					</div>
-
 					<div class="review__form-field-wrapper">
-						<label class="review__form-field-label" for="user-phone">Phone number</label>
-						<input
-							class="review__form-field"
-							type="tel"
-							name="user-phone-number"
-							id="user-phone"
-							placeholder="+38(0_ _) _ _ _   _ _   _ _"
-							required
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-							title="+38(099)444 22 11"
-						/>
+						<label class="review__form-field-label" for="user-phone"
+							>Phone number</label
+						>
+						<div class="input__container">
+							<input
+								class="review__form-field"
+								type="tel"
+								name="user-phone-number"
+								id="user-phone"
+								placeholder="+38(0_ _) _ _ _   _ _   _ _"
+								required
+								pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+								title="+38(099)444 22 11"
+							/>
+							<span class="error-message">
+								<svg width="12" height="12" aria-label="attention">
+									<use href="./images/sprite.svg#icon-attention"></use>
+								</svg>
+								This phone must be in the format 099 000 00 00
+							</span>
+						</div>
 					</div>
 
 					<div class="review__form-field-wrapper last__form-field">
 						<label class="review__form-field-label" for="user-email">
 							E-mail
 						</label>
-						<input
-							class="review__form-field"
-							type="email"
-							name="user-email"
-							id="user-email"
-							placeholder="example@gmail.com"
-							required
-							title="willie.jennings@example.com"
-						/>
+						<div class="input__container">
+							<input
+								class="review__form-field"
+								type="email"
+								name="user-email"
+								id="user-email"
+								placeholder="example@gmail.com"
+								required
+								title="willie.jennings@example.com"
+							/>
+							<span class="error-message">
+								<svg width="12" height="12" aria-label="attention">
+									<use href="./images/sprite.svg#icon-attention"></use>
+								</svg>
+								Please enter a valid email address
+							</span>
+						</div>
 					</div>
 
 					<button class="review__form-btn" type="submit">Send</button>

@@ -13,9 +13,9 @@ closeModalBtn.addEventListener('click', () => {
 });
 
 // 4. Функція для закриття при натисканні на "Send"
-// submitBtn.addEventListener('click', (event) => {
-//   Якщо форма валідна, закриваємо модалку
-//   event.preventDefault();
-//   Розкоментуйте, якщо не хочете, щоб форма реально відправлялася
-//   backdrop.classList.remove('is-open');
-// });
+submitBtn.addEventListener('click', (event) => {
+	// Якщо форма валідна, закриваємо модалку
+	event.preventDefault();
+	// Розкоментуйте, якщо не хочете, щоб форма реально відправлялася
+	backdrop.classList.remove('is-open');
+});
