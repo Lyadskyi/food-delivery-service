@@ -3,10 +3,13 @@
 	--button-green: #bbf330;
 	--dark-green: #7eb101;
 	--default: #2c2c2c;
-	--yellow-main: #ffe550;
-	--placeholder: #505050;
-	--white: #fefefe;
 	--error-red: #ff705d;
+	--modal-mobile: #000000;
+	--placeholder: #505050;
+	--yellow-main: #ffe550;
+	--white: #fefefe;
+
+	--transition: all 0.2s ease-in-out;
 }
 
 /* === Rules tags === */
@@ -140,6 +143,43 @@ html {
 	.modal {
 		display: none;
 	}
+
+	/* === Modal window === */
+	.modal__mobile {
+		position: absolute;
+		top: 50px;
+		right: 20px;
+		width: 130px;
+		height: 255px;
+		overflow: hidden;
+		border-radius: 30px 0 30px 30px;
+		box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+		background: var(--white);
+	}
+
+	.modal__mobile-close-btn {
+		position: absolute;
+		top: 11px;
+		right: 11px;
+		background-color: transparent;
+	}
+
+	.menu__mobile-item {
+		display: flex;
+		align-items: center;
+		padding-inline: 16px;
+		width: 130px;
+		height: 51px;
+	}
+
+	.menu__mobile-item:hover {
+		transition: var(--transition);
+		background-color: var(--button-green);
+	}
+
+	.menu__mobile-link {
+		color: var(--modal-mobile);
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -201,7 +241,7 @@ html {
 	}
 
 	.header__btn:hover {
-		transition: all 0.2s ease-in-out;
+		transition: var(--transition);
 		background: var(--yellow-main);
 	}
 
@@ -239,7 +279,7 @@ html {
 	}
 
 	.hero__btn:hover {
-		transition: all 0.2s ease-in-out;
+		transition: var(--transition);
 		background: var(--yellow-main);
 	}
 
@@ -304,6 +344,10 @@ html {
 
 	.read-more__icon {
 		margin-left: 3.5px;
+	}
+
+	.modal__mobile {
+		display: none;
 	}
 
 	/* === Section Favorites 704x1225px === */
@@ -483,7 +527,7 @@ html {
 
 	.offerings__btn:hover {
 		border: none;
-		transition: all 0.2s ease-in-out;
+		transition: var(--transition);
 		background: var(--button-green);
 	}
 
@@ -516,7 +560,7 @@ html {
 	.favorites__list-item {
 		margin: 0 auto;
 		border-radius: 50%;
-		transition: all 0.2s ease-in-out;
+		transition: var(--transition);
 		border: 16px solid var(--yellow-main);
 		background: var(--white);
 	}
@@ -652,7 +696,7 @@ html {
 	}
 
 	.subscribe__form-btn:hover {
-		transition: all 0.2s ease-in-out;
+		transition: var(--transition);
 		background: var(--yellow-main);
 	}
 
@@ -706,7 +750,7 @@ html {
 
 	.subscribe__form-btn:hover {
 		border: none;
-		transition: all 0.2s ease-in-out;
+		transition: var(--transition);
 		background: var(--button-green);
 	}
 

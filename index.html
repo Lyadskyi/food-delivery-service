@@ -491,7 +491,7 @@
 				</div>
 			</div>
 		</footer> -->
-		<!-- Modal window -->
+		<!-- Backdrop-modal window -->
 		<div class="backdrop">
 			<div class="modal">
 				<button class="modal__close-btn" type="button">
@@ -568,7 +568,12 @@
 								title="willie.jennings@example.com"
 							/>
 							<span class="error-message">
-								<svg width="12" height="12" aria-label="attention">
+								<svg
+									class="attention-icon"
+									width="12"
+									height="12"
+									aria-label="attention"
+								>
 									<use href="./images/sprite.svg#icon-attention"></use>
 								</svg>
 								Please enter a valid email address
@@ -579,6 +584,38 @@
 					<button class="review__form-btn" type="submit">Send</button>
 				</form>
 			</div>
+		</div>
+		<!-- Modal window -->
+		<div class="modal__mobile">
+			<button class="modal__mobile-close-btn" type="button">
+				<svg
+					class="modal__mobile-close-icon"
+					width="11"
+					height="11"
+					aria-label="close modal button"
+				>
+					<use href="./images/sprite.svg#icon-close-button"></use>
+				</svg>
+			</button>
+			<nav class="menu__mobile">
+				<ul class="menu__mobile-list">
+					<li class="menu__mobile-item">
+						<a class="menu__mobile-link" href="#home">Home</a>
+					</li>
+					<li class="menu__mobile-item">
+						<a class="menu__mobile-link" href="#about">About</a>
+					</li>
+					<li class="menu__mobile-item">
+						<a class="menu__mobile-link" href="#service">Service</a>
+					</li>
+					<li class="menu__mobile-item">
+						<a class="menu__mobile-link" href="#menu">Menu</a>
+					</li>
+					<li class="menu__mobile-item">
+						<a class="menu__mobile-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		<script src="./js/script.js"></script>
 	</body>
