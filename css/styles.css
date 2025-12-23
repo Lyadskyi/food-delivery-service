@@ -99,6 +99,37 @@ html {
 
 /* === Section Hero 280x259px === */
 
+.hero__title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.179; /* 33/28 */
+	width: 280px;
+	margin-block: 60px 28px;
+}
+
+.hero__text {
+	font-size: 14px;
+	line-height: 1.443;
+	margin-block-end: 32px;
+}
+
+.hero__btn {
+	width: 98px;
+	height: 32px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 0;
+	padding: 6px 18px;
+	border-radius: 30px;
+	background: var(--button-green);
+	color: var(--default);
+}
+
+.hero__btn:hover {
+	transition: var(--transition);
+	background: var(--yellow-main);
+}
+
 /* === Section Offerings 320x1122px === */
 .offerings {
 	background-image: url(../images/offerings/offerings-bg-mobile.png);
@@ -191,7 +222,7 @@ html {
 
 		/* Ховаємо меню за межі екрана справа */
 		transform: translateX(100%);
-		transition: transform 450ms ease-in-out;
+		transition: transform 350ms ease-in-out;
 	}
 
 	/* Коли додано клас is-open, повертаємо меню на екран */
@@ -278,7 +309,7 @@ html {
 	}
 
 	.hero__title {
-		max-width: 537px;
+		width: 537px;
 		font-size: 42px;
 		line-height: 1.1905;
 		margin-bottom: 44px;
@@ -287,23 +318,6 @@ html {
 	.hero__text {
 		width: 336px;
 		margin-bottom: 40px;
-	}
-
-	.hero__btn {
-		width: 98px;
-		height: 32px;
-		font-weight: 500;
-		font-size: 13px;
-		line-height: 0;
-		padding: 6px 18px;
-		border-radius: 30px;
-		background: var(--button-green);
-		color: var(--default);
-	}
-
-	.hero__btn:hover {
-		transition: var(--transition);
-		background: var(--yellow-main);
 	}
 
 	/* === Section Offerings 768x1140px === */
