@@ -145,7 +145,7 @@ html {
 	}
 
 	/* === Modal window === */
-	.modal__mobile {
+	.modal__mobile-wrapper {
 		position: absolute;
 		top: 50px;
 		right: 20px;
@@ -179,6 +179,29 @@ html {
 
 	.menu__mobile-link {
 		color: var(--modal-mobile);
+	}
+
+	.modal__mobile {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+
+		/* Ховаємо меню за межі екрана справа */
+		transform: translateX(100%);
+		transition: transform 450ms ease-in-out;
+	}
+
+	/* Коли додано клас is-open, повертаємо меню на екран */
+	.modal__mobile.is-open {
+		transform: translateX(0);
+	}
+
+	/* Заборона скролу для body */
+	.no-scroll {
+		overflow: hidden;
 	}
 }
 
