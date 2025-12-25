@@ -98,13 +98,15 @@ html {
 } */
 
 /* === Section Hero 280x259px === */
+.hero {
+	padding-block: 60px 50px;
+}
 
 .hero__title {
-	font-weight: 700;
 	font-size: 28px;
 	line-height: 1.179; /* 33/28 */
 	width: 280px;
-	margin-block: 60px 28px;
+	margin-block-end: 28px;
 }
 
 .hero__text {
