@@ -236,80 +236,140 @@
 			</section>
 
 			<!-- === Section Favorites === -->
-			<!-- <section id="menu" class="favorites section">
+			<section id="menu" class="favorites">
 				<div class="container">
 					<h2 class="favorites__title section-title">Some of Our Favorites</h2>
 					<p class="favorites__text">Looking for something delicious?</p>
 					<ul class="favorites__list">
 						<li class="favorites__list-item">
 							<a class="favorites__list-link" href="#">
-								<img
-									srcset="
-										./images/favorites/gamburger-mobile.png  224w,
-										./images/favorites/gamburger-tablet.png  268w,
-										./images/favorites/gamburger-desktop.png 315w
-									"
-									sizes="(min-width: 1280px) 315px, (min-width: 768px) 268px, (min-width: 320px) 224px"
-									src="./images/favorites/gamburger-desktop.png"
-									alt="gamburger"
-									width="315"
-									height="315"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/favorites/gamburger-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/favorites/gamburger-tablet.png"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/favorites/gamburger-mobile.png"
+									/>
+									<img
+										src="./images/favorites/gamburger-mobile.png"
+										alt="gamburger"
+										loading="lazy"
+									/>
+								</picture>
 							</a>
 						</li>
 						<li class="favorites__list-item">
 							<a class="favorites__list-link" href="#">
-								<img
-									src="./images/favorites/pasta-desktop.png"
-									alt="pasta"
-									width="315"
-									height="315"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/favorites/pasta-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/favorites/pasta-tablet.png"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/favorites/pasta-mobile.png"
+									/>
+									<img
+										src="./images/favorites/pasta-mobile.png"
+										alt="pasta"
+										loading="lazy"
+									/>
+								</picture>
 							</a>
 						</li>
 						<li class="favorites__list-item">
 							<a class="favorites__list-link" href="#">
-								<img
-									src="./images/favorites/pizza-desktop.png"
-									alt="pizza"
-									width="315"
-									height="315"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/favorites/pizza-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/favorites/pizza-tablet.png"
+									/>
+									<source
+										media="(max-width: 767px)"
+										srcset="./images/favorites/pizza-mobile.png"
+									/>
+									<img
+										src="./images/favorites/pizza-mobile.png"
+										alt="pizza"
+										loading="lazy"
+									/>
+								</picture>
 							</a>
 						</li>
-						<li class="list favorites__list-item">
+						<li class="favorites__list-item chicken">
 							<a class="favorites__list-link" href="#">
-								<img
-									src="./images/favorites/chicken-desktop.png"
-									alt="chicken"
-									width="315"
-									height="315"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/favorites/chicken-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/favorites/chicken-tablet.png"
+									/>
+									<img
+										src="./images/favorites/chicken-tablet.png"
+										alt="chiken"
+										loading="lazy"
+									/>
+								</picture>
 							</a>
 						</li>
-						<li class="favorites__list-item">
+						<li class="favorites__list-item salad">
 							<a class="favorites__list-link" href="#">
-								<img
-									src="./images/favorites/salad-desktop.png"
-									alt="salad"
-									width="315"
-									height="315"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/favorites/salad-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/favorites/salad-tablet.png"
+									/>
+									<img
+										src="./images/favorites/salad-tablet.png"
+										alt="salad"
+										loading="lazy"
+									/>
+								</picture>
 							</a>
 						</li>
-						<li class="favorites__list-item">
+						<li class="favorites__list-item borshch">
 							<a class="favorites__list-link" href="#">
-								<img
-									src="./images/favorites/borshch-desktop.png"
-									alt="borshch"
-									width="315"
-									height="315"
-								/>
+								<picture>
+									<source
+										media="(min-width: 1280px)"
+										srcset="./images/favorites/borshch-desktop.png"
+									/>
+									<source
+										media="(min-width: 768px)"
+										srcset="./images/favorites/borshch-tablet.png"
+									/>
+									<img
+										src="./images/favorites/borshch-tablet.png"
+										alt="borshch"
+										loading="lazy"
+									/>
+								</picture>
 							</a>
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- === Section Customers === -->
 			<!-- <section id="service" class="customers">

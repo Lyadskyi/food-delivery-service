@@ -105,13 +105,13 @@ html {
 	font-size: 28px;
 	line-height: 1.179; /* 33/28 */
 	width: 280px;
-	margin-block-end: 28px;
+	margin-bottom: 28px;
 }
 
 .hero__text {
 	font-size: 14px;
 	line-height: 1.443;
-	margin-block-end: 32px;
+	margin-bottom: 32px;
 }
 
 .hero__btn {
@@ -204,6 +204,7 @@ html {
 	line-height: 0;
 	/* padding-block: 10px;
 		padding-inline: 20px; */
+	margin-right: 24px;
 	width: 106px;
 	height: 40px;
 	border-radius: 30px;
@@ -220,8 +221,7 @@ html {
 	display: inline-block;
 	font-size: 13px;
 	line-height: 1.5385;
-	margin-left: 24px;
-	color: #000000;
+	color: var(--modal-mobile);
 }
 
 .read-more__icon {
@@ -229,6 +229,46 @@ html {
 }
 
 /* === Section Favorites 280x1064px === */
+.favorites {
+	height: 1064px;
+	/* padding: 50px 0; */
+}
+
+.favorites__title {
+	text-align: center;
+}
+
+.favorites__text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.1429; /* 16/14 */
+	margin-bottom: 60px;
+}
+
+.favorites__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.favorites__list-item {
+	margin: 0 auto;
+	border-radius: 50%;
+	transition: var(--transition);
+	border: 11px solid var(--yellow-main);
+	background: var(--white);
+}
+
+.favorites__list-item:hover {
+	border-color: var(--button-green);
+}
+
+.favorites__list-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 18px 17px;
+}
 
 /* === Section Customers 320X769px === */
 
@@ -260,6 +300,18 @@ html {
 	}
 
 	.modal {
+		display: none;
+	}
+
+	.chicken {
+		display: none;
+	}
+
+	.salad {
+		display: none;
+	}
+
+	.borshch {
 		display: none;
 	}
 
