@@ -280,52 +280,50 @@ html {
 	padding-block: 60px;
 }
 
-/* .customers__text {
-	margin-bottom: 32px;
-} */
+.customers__text {
+	margin-bottom: 18px;
+}
 
-/* .customers__content {
-	display: flex;
-	height: 227px;
-	gap: 239px;
-} */
+.customers__content {
+	max-height: 499px;
+}
 
-/* .customers__options,
+.customers__options{
+	margin-bottom: 18px;
+}
+
+.customers__options,
 .customers__experience {
-	max-width: 501px;
-	padding: 14px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 29px;
-	border-bottom-left-radius: 29px;
-	border-bottom-right-radius: 29px;
+	/* max-width: 300px; */
+	padding: 8px;
+	border-radius: 0 29px 29px 29px;
 	background-color: var(--white);
-} */
+}
 
-/* .customers__img {
-	display: block;
+.customers__img {
 	margin-bottom: 28px;
-} */
+}
 
-/* .customers__subtitle {
+.customers__subtitle {
 	font-weight: 700;
-	font-size: 18px;
-	line-height: 1.1667; 21/18
+	font-size: 16px;
+	line-height: 1.1875; /* 19/16 */
 	margin-bottom: 40px;
-} */
+}
 
-/* .customers__author {
+.customers__author {
 	display: flex;
-} */
+}
 
-/* .customers__author-img {
+.customers__author-img {
 	margin-right: 16px;
-} */
+}
 
-/* .customers__inner {
+.customers__inner {
 	position: relative;
-} */
+}
 
-/* .customers__inner::after {
+.customers__inner::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -334,18 +332,18 @@ html {
 	height: 52px;
 	border-radius: 1px;
 	background-color: var(--dark-green);
-} */
+}
 
-/* .customers__inner-title {
+.customers__inner-title {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.5;
 	margin-bottom: 2px;
-} */
+}
 
-/* .customers__inner-subtitle {
+.customers__inner-subtitle {
 	font-size: 14px;
-} */
+}
 
 /* === Section Subscribe 280X375px === */
 
