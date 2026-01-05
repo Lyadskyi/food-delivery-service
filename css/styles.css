@@ -271,6 +271,81 @@ html {
 }
 
 /* === Section Customers 320X769px === */
+.customers {
+	background-image: url(../images/customers/customers-bg-mobile.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 769px;
+	padding-block: 60px;
+}
+
+/* .customers__text {
+	margin-bottom: 32px;
+} */
+
+/* .customers__content {
+	display: flex;
+	height: 227px;
+	gap: 239px;
+} */
+
+/* .customers__options,
+.customers__experience {
+	max-width: 501px;
+	padding: 14px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 29px;
+	border-bottom-left-radius: 29px;
+	border-bottom-right-radius: 29px;
+	background-color: var(--white);
+} */
+
+/* .customers__img {
+	display: block;
+	margin-bottom: 28px;
+} */
+
+/* .customers__subtitle {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.1667; 21/18
+	margin-bottom: 40px;
+} */
+
+/* .customers__author {
+	display: flex;
+} */
+
+/* .customers__author-img {
+	margin-right: 16px;
+} */
+
+/* .customers__inner {
+	position: relative;
+} */
+
+/* .customers__inner::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 93px;
+	width: 1px;
+	height: 52px;
+	border-radius: 1px;
+	background-color: var(--dark-green);
+} */
+
+/* .customers__inner-title {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 2px;
+} */
+
+/* .customers__inner-subtitle {
+	font-size: 14px;
+} */
 
 /* === Section Subscribe 280X375px === */
 
